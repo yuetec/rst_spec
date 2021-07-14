@@ -4,7 +4,7 @@
 
 在source文件夹下新建“章”文件夹，下级目录新建media文件夹与各节内容的rst文件以及次级index目录，media下级分别新建对应小节名字的文件存放各小节图片资源，其中章节rst文件命名方式采用下划线命名法.，如图：
 
-.. figure:: media/dire_spec/p2.png
+.. figure:: media/dire_spec/p1.png
     :alt: error
     :align: center
 
