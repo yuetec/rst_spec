@@ -1,0 +1,283 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>rst语法规范 &mdash; myProject 0.1.0 文档</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="prev" title="文件目录规范" href="dire_spec.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> myProject
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="在文档中搜索" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">关于我们</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about_us.html">关于我们</a></li>
+</ul>
+<p class="caption"><span class="caption-text">从这里开始</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">sphinx文档规范</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="overview.html">概论</a></li>
+<li class="toctree-l2"><a class="reference internal" href="initialize.html">新建文档相关配置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dire_spec.html">文件目录规范</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">rst语法规范</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">myProject</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">sphinx文档规范</a> &raquo;</li>
+        
+      <li>rst语法规范</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/specification/rst_spec.rst.txt" rel="nofollow"> 查看页面源码</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="rst">
+<h1>rst语法规范<a class="headerlink" href="#rst" title="永久链接至标题">¶</a></h1>
+<div class="section" id="id1">
+<h2>图片<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<p>文档引用的图片存储在文档源码目录下的media文件夹中，按部分、章节及文档分目录存储。</p>
+<p>图片要直接使用如下形式,方便居中：</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="p"> ..</span> <span class="ow">figure</span><span class="p">::</span> media/rst_spec/logo.png
+<span class="linenos">2</span>     <span class="nc">:alt:</span> error
+<span class="linenos">3</span>     <span class="nc">:align:</span> center
+<span class="linenos">4</span>
+<span class="linenos">5</span>     图 1 logo
+</pre></div>
+</div>
+<p>小图片穿插于文字中使用，其中第三行代码写于整个rst文件末尾</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span>|logo|
+<span class="linenos">2</span>
+<span class="linenos">3</span><span class="p">..</span> <span class="nt">|logo|</span> <span class="ow">image</span><span class="p">::</span> media/rst_spec/logo.png
+</pre></div>
+</div>
+</div>
+<div class="section" id="id2">
+<h2>rst格式检查<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<p>使用vscode的rst插件在编写时就会有格式检查。编写文档时应尽量满足该格式检查的规范。
+对于docx转rst后的不规范文档，做到见一个改一个。</p>
+<p>make html时，编译会有提示输出，尽量让它不输出的warning。</p>
+</div>
+<div class="section" id="id3">
+<h2>文档编码和回车<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<p>文档编码统一用“utf-8”， 回车使用“LF”，不要使用“CRLF”，文档编码和回车可在VS-Code的右下角设置。</p>
+</div>
+<div class="section" id="id4">
+<h2>代码引用<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<p>超过3行的代码要加上行号、并用caption名指明代码片段的名，对于引用的代码文件，使用caption指明引用的路径名。</p>
+<p>我们一般不使用caption属性，用以下格式即可。</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="p"> ..</span> <span class="ow">code-block</span><span class="p">::</span> rst
+<span class="linenos">2</span>     <span class="nc">:linenos:</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id5">
+<h2>表格<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="p"> ..</span> <span class="ow">list-table</span><span class="p">::</span> Frozen Delights!
+<span class="linenos"> 2</span>     <span class="nc">:widths:</span> 15 10 30
+<span class="linenos"> 3</span>     <span class="nc">:header-rows:</span> 1
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span>     <span class="m">*</span> - Treat
+<span class="linenos"> 6</span>       <span class="m">-</span> Quantity
+<span class="linenos"> 7</span>       <span class="m">-</span> Description
+<span class="linenos"> 8</span>     <span class="m">*</span> - Albatross
+<span class="linenos"> 9</span>       <span class="m">-</span> 2.99
+<span class="linenos">10</span>       <span class="m">-</span> On a stick!
+<span class="linenos">11</span>     <span class="m">*</span> - Crunchy Frog
+<span class="linenos">12</span>       <span class="m">-</span> 1.49
+<span class="linenos">13</span>       <span class="m">-</span> If we took the bones out, it wouldn&#39;t be
+<span class="linenos">14</span>         crunchy, now would it?
+<span class="linenos">15</span>     <span class="m">*</span> - Gannet Ripple
+<span class="linenos">16</span>       <span class="m">-</span> 1.99
+<span class="linenos">17</span>       <span class="m">-</span> On a stick!
+</pre></div>
+</div>
+<p>widths属性根据需求决定表格宽度；header-rows统一值为1。</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="dire_spec.html" class="btn btn-neutral float-left" title="文件目录规范" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; 版权所有 2021, ljh.
+
+    </p>
+  </div>
+    
+    
+    
+    利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用了 
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    
+    由 <a href="https://readthedocs.org">Read the Docs</a>开发. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
