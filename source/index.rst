@@ -10,6 +10,7 @@ sphinx文档规范
 .. toctree::
    :maxdepth: 2
    :caption: 从这里开始
+   :numbered:
    :titlesonly:
 
    specification/index

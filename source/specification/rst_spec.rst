@@ -10,20 +10,20 @@ rst语法规范
 .. code-block:: rst
    :linenos:
 
-    .. figure:: media/rst_spec/logo.png
+    .. figure:: media/rst_spec/none.png
         :alt: error
         :align: center
 
-        图 1 logo
+        图 1 none
 
 小图片穿插于文字中使用，其中第三行代码写于整个rst文件末尾
 
 .. code-block:: rst
    :linenos:
 
-   |logo|
+   |none|
 
-   .. |logo| image:: media/rst_spec/logo.png
+   .. |none| image:: media/rst_spec/none.png
 
 rst格式检查
 --------------------------
